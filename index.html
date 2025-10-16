@@ -90,36 +90,1069 @@
 
   <script>
     const phrasalVerbs = [
-      {
-        phrasal: "cut off",
-        spanish: "cortar / interrumpir",
-        explanation: "To stop the supply or interrupt.",
-        example: "The phone call was cut off."
-      },
-      {
-        phrasal: "hold back",
-        spanish: "contener, reprimir",
-        explanation: "To stop yourself from showing emotion.",
-        example: "She couldn't hold back her tears."
-      },
-      {
-        phrasal: "bring up",
-        spanish: "mencionar, criar",
-        explanation: "To mention a topic or raise a child.",
-        example: "He brought up the topic during the meeting."
-      },
-      {
-        phrasal: "carry on",
-        spanish: "continuar",
-        explanation: "To continue doing something.",
-        example: "They decided to carry on with the plan."
-      },
-      {
-        phrasal: "give up",
-        spanish: "rendirse",
-        explanation: "To stop trying to do something.",
-        example: "Don’t give up – you can do it!"
-      },
+       {
+    phrasal: "ask out",
+    spanish: "invitar a salir",
+    explanation: "To invite someone on a date.",
+    example: "He asked her out to dinner."
+  },
+  {
+    phrasal: "bring up",
+    spanish: "mencionar / criar",
+    explanation: "To mention a topic or raise a child.",
+    example: "She brought up an interesting point."
+  },
+  {
+    phrasal: "call off",
+    spanish: "cancelar",
+    explanation: "To cancel something that was planned.",
+    example: "They called off the meeting."
+  },
+  {
+    phrasal: "carry on",
+    spanish: "continuar",
+    explanation: "To continue doing something.",
+    example: "Carry on with your work."
+  },
+  {
+    phrasal: "come across",
+    spanish: "encontrar por casualidad",
+    explanation: "To find something unexpectedly.",
+    example: "I came across an old photo."
+  },
+  {
+    phrasal: "come up with",
+    spanish: "idear / inventar",
+    explanation: "To think of an idea or plan.",
+    example: "She came up with a great idea."
+  },
+  {
+    phrasal: "cut down",
+    spanish: "reducir",
+    explanation: "To reduce the amount of something.",
+    example: "I'm trying to cut down on sugar."
+  },
+  {
+    phrasal: "drop off",
+    spanish: "dejar / dormir",
+    explanation: "To deliver someone or something / fall asleep.",
+    example: "Can you drop me off at the station?"
+  },
+  {
+    phrasal: "figure out",
+    spanish: "entender / resolver",
+    explanation: "To understand or solve something.",
+    example: "I can't figure out this problem."
+  },
+  {
+    phrasal: "get along",
+    spanish: "llevarse bien",
+    explanation: "To have a good relationship.",
+    example: "They get along very well."
+  },
+  {
+    phrasal: "get away",
+    spanish: "escapar / irse de vacaciones",
+    explanation: "To escape or go on vacation.",
+    example: "We plan to get away next weekend."
+  },
+  {
+    phrasal: "get over",
+    spanish: "superar",
+    explanation: "To recover from something.",
+    example: "She got over the flu quickly."
+  },
+  {
+    phrasal: "give away",
+    spanish: "regalar / revelar",
+    explanation: "To give something for free / reveal a secret.",
+    example: "He gave away all his old clothes."
+  },
+  {
+    phrasal: "give back",
+    spanish: "devolver",
+    explanation: "To return something to someone.",
+    example: "Please give back the book."
+  },
+  {
+    phrasal: "go over",
+    spanish: "revisar",
+    explanation: "To review or check.",
+    example: "Let's go over the report."
+  },
+  {
+    phrasal: "grow up",
+    spanish: "crecer",
+    explanation: "To become an adult.",
+    example: "I grew up in Spain."
+  },
+  {
+    phrasal: "hang out",
+    spanish: "pasar el rato",
+    explanation: "To spend time relaxing.",
+    example: "We like to hang out on weekends."
+  },
+  {
+    phrasal: "hold on",
+    spanish: "esperar",
+    explanation: "To wait for a moment.",
+    example: "Hold on, I'll be right back."
+  },
+  {
+    phrasal: "keep on",
+    spanish: "seguir haciendo algo",
+    explanation: "To continue doing something.",
+    example: "Keep on practicing."
+  },
+  {
+    phrasal: "look after",
+    spanish: "cuidar de",
+    explanation: "To take care of someone or something.",
+    example: "She looks after her little brother."
+  },
+  {
+    phrasal: "look forward to",
+    spanish: "esperar con ilusión",
+    explanation: "To anticipate something enjoyable.",
+    example: "I look forward to the weekend."
+  },
+  {
+    phrasal: "look up",
+    spanish: "buscar información",
+    explanation: "To search for information.",
+    example: "Look up the word in the dictionary."
+  },
+  {
+    phrasal: "make up",
+    spanish: "inventar / reconciliarse",
+    explanation: "To invent a story / become friends again.",
+    example: "They made up after the argument."
+  },
+  {
+    phrasal: "pick up",
+    spanish: "recoger / aprender",
+    explanation: "To collect someone / learn something.",
+    example: "Can you pick me up at the airport?"
+  },
+  {
+    phrasal: "put off",
+    spanish: "posponer",
+    explanation: "To delay something.",
+    example: "They put off the meeting until next week."
+  },
+  {
+    phrasal: "run out of",
+    spanish: "quedarse sin",
+    explanation: "To have no more of something.",
+    example: "We've run out of milk."
+  },
+  {
+    phrasal: "set up",
+    spanish: "organizar / montar",
+    explanation: "To arrange or establish.",
+    example: "They set up a new company."
+  },
+  {
+    phrasal: "take off",
+    spanish: "despegar / quitar",
+    explanation: "To leave the ground / remove something.",
+    example: "The plane took off on time."
+  },
+  {
+    phrasal: "turn down",
+    spanish: "rechazar / bajar volumen",
+    explanation: "To refuse or lower.",
+    example: "She turned down the job offer."
+  },
+  {
+    phrasal: "turn up",
+    spanish: "aparecer / subir volumen",
+    explanation: "To appear / increase volume.",
+    example: "He turned up late to the party."
+  },
+  {
+    phrasal: "work out",
+    spanish: "hacer ejercicio / resolver",
+    explanation: "To exercise / solve a problem.",
+    example: "We worked out at the gym."
+  },
+  {
+    phrasal: "break down",
+    spanish: "averiarse / derrumbarse",
+    explanation: "To stop working / lose control emotionally.",
+    example: "The car broke down on the highway."
+  },
+  {
+    phrasal: "bring about",
+    spanish: "causar / provocar",
+    explanation: "To cause something to happen.",
+    example: "The new law brought about changes."
+  },
+  {
+    phrasal: "call back",
+    spanish: "devolver la llamada",
+    explanation: "To return a phone call.",
+    example: "I'll call you back later."
+  },
+  {
+    phrasal: "check in",
+    spanish: "registrarse",
+    explanation: "To register at a hotel or airport.",
+    example: "We checked in at 3 pm."
+  },
+  {
+    phrasal: "check out",
+    spanish: "pagar y salir / revisar",
+    explanation: "To pay and leave / look at something.",
+    example: "We checked out of the hotel."
+  },
+  {
+    phrasal: "come in",
+    spanish: "entrar",
+    explanation: "To enter a place.",
+    example: "Come in, please."
+  },
+  {
+    phrasal: "cut out",
+    spanish: "eliminar",
+    explanation: "To remove or stop doing something.",
+    example: "Cut out the bad habits."
+  },
+  {
+    phrasal: "fill out",
+    spanish: "rellenar",
+    explanation: "To complete a form.",
+    example: "Please fill out this application."
+  },
+  {
+    phrasal: "get back",
+    spanish: "volver / recuperar",
+    explanation: "To return or recover something.",
+    example: "I got back home late."
+  },
+  {
+    phrasal: "give in",
+    spanish: "ceder / rendirse",
+    explanation: "To surrender or yield.",
+    example: "She gave in to their demands."
+  },
+  {
+    phrasal: "go ahead",
+    spanish: "adelante / continuar",
+    explanation: "To proceed or continue.",
+    example: "Go ahead with your plan."
+  },
+  {
+    phrasal: "hold up",
+    spanish: "retrasar / asaltar",
+    explanation: "To delay / rob.",
+    example: "The traffic held us up."
+  },
+  {
+    phrasal: "keep up",
+    spanish: "mantener el ritmo",
+    explanation: "To maintain the pace.",
+    example: "Keep up the good work."
+  },
+  {
+    phrasal: "let down",
+    spanish: "decepcionar",
+    explanation: "To disappoint someone.",
+    example: "He let me down."
+  },
+  {
+    phrasal: "look out",
+    spanish: "tener cuidado",
+    explanation: "To be careful or watchful.",
+    example: "Look out for cars."
+  },
+  {
+    phrasal: "make out",
+    spanish: "entender / distinguir",
+    explanation: "To understand or see clearly.",
+    example: "I can't make out what he said."
+  },
+  {
+    phrasal: "pass out",
+    spanish: "desmayarse",
+    explanation: "To lose consciousness.",
+    example: "He passed out from exhaustion."
+  }
+   {
+    phrasal: "put up with",
+    spanish: "tolerar / soportar",
+    explanation: "To tolerate or endure something unpleasant.",
+    example: "I can't put up with the noise."
+  },
+  {
+    phrasal: "run into",
+    spanish: "encontrarse con alguien por casualidad",
+    explanation: "To meet someone unexpectedly.",
+    example: "I ran into an old friend yesterday."
+  },
+  {
+    phrasal: "set off",
+    spanish: "partir / activar",
+    explanation: "To start a journey or cause something to happen.",
+    example: "We set off early in the morning."
+  },
+  {
+    phrasal: "show up",
+    spanish: "aparecer / llegar",
+    explanation: "To arrive or appear.",
+    example: "He showed up late to the meeting."
+  },
+  {
+    phrasal: "take after",
+    spanish: "parecerse a alguien",
+    explanation: "To resemble a family member.",
+    example: "She takes after her mother."
+  },
+  {
+    phrasal: "turn off",
+    spanish: "apagar",
+    explanation: "To switch something off.",
+    example: "Please turn off the lights."
+  },
+  {
+    phrasal: "turn on",
+    spanish: "encender",
+    explanation: "To switch something on.",
+    example: "Can you turn on the TV?"
+  },
+  {
+    phrasal: "watch out",
+    spanish: "tener cuidado",
+    explanation: "To be careful or alert.",
+    example: "Watch out for the wet floor."
+  },
+  {
+    phrasal: "break up",
+    spanish: "romper una relación",
+    explanation: "To end a relationship.",
+    example: "They broke up last year."
+  },
+  {
+    phrasal: "bring back",
+    spanish: "devolver / recordar",
+    explanation: "To return something or remind.",
+    example: "This song brings back memories."
+  },
+  {
+    phrasal: "call up",
+    spanish: "llamar por teléfono",
+    explanation: "To phone someone.",
+    example: "I'll call you up later."
+  },
+  {
+    phrasal: "check out",
+    spanish: "revisar / salir de un hotel",
+    explanation: "To look at something or leave a hotel.",
+    example: "Check out this website."
+  },
+  {
+    phrasal: "come up",
+    spanish: "surgir / aparecer",
+    explanation: "To happen or appear.",
+    example: "Something urgent came up."
+  },
+  {
+    phrasal: "cut back on",
+    spanish: "reducir",
+    explanation: "To reduce consumption.",
+    example: "I'm cutting back on sugar."
+  },
+  {
+    phrasal: "fill in",
+    spanish: "rellenar / informar",
+    explanation: "To complete a form or inform.",
+    example: "Please fill in the form."
+  },
+  {
+    phrasal: "get in",
+    spanish: "entrar / llegar",
+    explanation: "To enter or arrive.",
+    example: "What time did you get in?"
+  },
+  {
+    phrasal: "give out",
+    spanish: "repartir / agotarse",
+    explanation: "To distribute or run out.",
+    example: "They gave out free samples."
+  },
+  {
+    phrasal: "go back",
+    spanish: "volver",
+    explanation: "To return to a place.",
+    example: "I want to go back home."
+  },
+  {
+    phrasal: "hold back",
+    spanish: "detener / contener",
+    explanation: "To restrain or keep something hidden.",
+    example: "He held back his tears."
+  },
+  {
+    phrasal: "keep away",
+    spanish: "mantenerse alejado",
+    explanation: "To stay at a distance.",
+    example: "Keep away from the fire."
+  },
+  {
+    phrasal: "look down on",
+    spanish: "menospreciar",
+    explanation: "To think less of someone.",
+    example: "Don't look down on others."
+  },
+  {
+    phrasal: "make up for",
+    spanish: "compensar",
+    explanation: "To compensate for something.",
+    example: "He tried to make up for being late."
+  },
+  {
+    phrasal: "pass away",
+    spanish: "fallecer",
+    explanation: "To die.",
+    example: "Her grandfather passed away last year."
+  },
+  {
+    phrasal: "pick out",
+    spanish: "seleccionar",
+    explanation: "To choose or select.",
+    example: "She picked out a dress."
+  },
+  {
+    phrasal: "put away",
+    spanish: "guardar",
+    explanation: "To put something in its place.",
+    example: "Put away your toys."
+  },
+  {
+    phrasal: "put down",
+    spanish: "menospreciar / escribir",
+    explanation: "To insult or write something.",
+    example: "Don't put him down."
+  },
+  {
+    phrasal: "run over",
+    spanish: "atropellar / repasar",
+    explanation: "To hit with a vehicle or review.",
+    example: "The car ran over the dog."
+  },
+  {
+    phrasal: "set aside",
+    spanish: "dejar de lado / ahorrar",
+    explanation: "To save or ignore.",
+    example: "She set aside some money."
+  },
+  {
+    phrasal: "show off",
+    spanish: "presumir",
+    explanation: "To display proudly.",
+    example: "He's always showing off."
+  },
+  {
+    phrasal: "shut down",
+    spanish: "cerrar / apagar",
+    explanation: "To close or turn off.",
+    example: "The factory shut down."
+  },
+  {
+    phrasal: "take back",
+    spanish: "retirar / retractarse",
+    explanation: "To withdraw or admit error.",
+    example: "I take back what I said."
+  },
+  {
+    phrasal: "take in",
+    spanish: "entender / alojar",
+    explanation: "To understand or give shelter.",
+    example: "It was a lot to take in."
+  },
+  {
+    phrasal: "tear up",
+    spanish: "romper en pedazos",
+    explanation: "To rip into pieces.",
+    example: "She tore up the letter."
+  },
+  {
+    phrasal: "think over",
+    spanish: "considerar",
+    explanation: "To consider carefully.",
+    example: "I'll think over your proposal."
+  },
+  {
+    phrasal: "throw away",
+    spanish: "tirar",
+    explanation: "To discard.",
+    example: "Don't throw away your chance."
+  },
+  {
+    phrasal: "turn around",
+    spanish: "darse la vuelta",
+    explanation: "To change direction.",
+    example: "Turn around and look at me."
+  },
+  {
+    phrasal: "use up",
+    spanish: "usar completamente",
+    explanation: "To finish a supply.",
+    example: "We've used up all the milk."
+  },
+  {
+    phrasal: "watch over",
+    spanish: "vigilar / cuidar",
+    explanation: "To protect or guard.",
+    example: "She watched over the children."
+  },
+  {
+    phrasal: "work on",
+    spanish: "trabajar en",
+    explanation: "To focus effort on something.",
+    example: "I'm working on a new project."
+  },
+  {
+    phrasal: "write down",
+    spanish: "anotar",
+    explanation: "To record in writing.",
+    example: "Write down the address."
+  }
+   {
+    phrasal: "back up",
+    spanish: "respaldar / retroceder",
+    explanation: "To support or move backward.",
+    example: "Make sure to back up your files."
+  },
+  {
+    phrasal: "blow up",
+    spanish: "explotar / enojarse",
+    explanation: "To explode or become very angry.",
+    example: "The bomb blew up near the building."
+  },
+  {
+    phrasal: "break in",
+    spanish: "entrar a la fuerza / interrumpir",
+    explanation: "To enter forcibly or interrupt.",
+    example: "Someone broke in last night."
+  },
+  {
+    phrasal: "bring in",
+    spanish: "traer / ingresar",
+    explanation: "To bring something or earn money.",
+    example: "The company brought in a lot of money."
+  },
+  {
+    phrasal: "call in",
+    spanish: "llamar / pedir ayuda",
+    explanation: "To telephone or request help.",
+    example: "They called in the experts."
+  },
+  {
+    phrasal: "check up on",
+    spanish: "verificar",
+    explanation: "To investigate or monitor.",
+    example: "I need to check up on the kids."
+  },
+  {
+    phrasal: "come down",
+    spanish: "bajar / reducirse",
+    explanation: "To fall or decrease.",
+    example: "The prices came down last week."
+  },
+  {
+    phrasal: "count on",
+    spanish: "contar con",
+    explanation: "To rely on someone.",
+    example: "You can count on me."
+  },
+  {
+    phrasal: "cross out",
+    spanish: "tachar",
+    explanation: "To draw a line through.",
+    example: "Cross out the wrong answers."
+  },
+  {
+    phrasal: "cut in",
+    spanish: "interrumpir / meterse",
+    explanation: "To interrupt or join abruptly.",
+    example: "She cut in while we were talking."
+  },
+  {
+    phrasal: "do over",
+    spanish: "volver a hacer",
+    explanation: "To repeat or redo.",
+    example: "I have to do my homework over."
+  },
+  {
+    phrasal: "drop by",
+    spanish: "pasar a visitar",
+    explanation: "To visit informally.",
+    example: "I'll drop by your house later."
+  },
+  {
+    phrasal: "end up",
+    spanish: "terminar / acabar",
+    explanation: "To finally be or do something.",
+    example: "We ended up staying home."
+  },
+  {
+    phrasal: "fill up",
+    spanish: "llenar",
+    explanation: "To make something full.",
+    example: "I filled up the car with gas."
+  },
+  {
+    phrasal: "find out",
+    spanish: "descubrir",
+    explanation: "To discover information.",
+    example: "I found out the truth."
+  },
+  {
+    phrasal: "get off",
+    spanish: "bajarse / salir",
+    explanation: "To leave a vehicle or finish work.",
+    example: "I get off the bus at 5th street."
+  },
+  {
+    phrasal: "get on",
+    spanish: "subirse / llevarse bien",
+    explanation: "To board a vehicle / have a good relationship.",
+    example: "She gets on the train at 7 am."
+  },
+  {
+    phrasal: "give up on",
+    spanish: "perder la esperanza",
+    explanation: "To stop believing or trying.",
+    example: "Don't give up on your dreams."
+  },
+  {
+    phrasal: "go off",
+    spanish: "explotar / sonar",
+    explanation: "To explode or make a noise.",
+    example: "The alarm went off at 6 am."
+  },
+  {
+    phrasal: "grow out of",
+    spanish: "quedar pequeño (ropa) / superar",
+    explanation: "To become too big for or outgrow.",
+    example: "She grew out of her shoes."
+  },
+  {
+    phrasal: "hold on to",
+    spanish: "aferrarse a",
+    explanation: "To keep or cling to something.",
+    example: "Hold on to your ticket."
+  },
+  {
+    phrasal: "keep out",
+    spanish: "no entrar",
+    explanation: "To prevent entry.",
+    example: "Keep out of the construction area."
+  },
+  {
+    phrasal: "let in",
+    spanish: "dejar entrar",
+    explanation: "To allow someone to enter.",
+    example: "She let me in the house."
+  },
+  {
+    phrasal: "live up to",
+    spanish: "estar a la altura",
+    explanation: "To meet expectations.",
+    example: "The movie lived up to the hype."
+  },
+  {
+    phrasal: "look back",
+    spanish: "recordar / mirar atrás",
+    explanation: "To think about the past.",
+    example: "Don't look back with regret."
+  },
+  {
+    phrasal: "look down",
+    spanish: "mirar hacia abajo",
+    explanation: "To direct one's gaze downward.",
+    example: "He looked down at his feet."
+  },
+  {
+    phrasal: "make up with",
+    spanish: "reconciliarse con",
+    explanation: "To reconcile with someone.",
+    example: "She made up with her sister."
+  },
+  {
+    phrasal: "move in",
+    spanish: "mudarse",
+    explanation: "To begin living in a new home.",
+    example: "They moved in last week."
+  },
+  {
+    phrasal: "move out",
+    spanish: "mudarse (dejar casa)",
+    explanation: "To leave a home.",
+    example: "He moved out of his parents' house."
+  },
+  {
+    phrasal: "pay back",
+    spanish: "devolver dinero",
+    explanation: "To return money owed.",
+    example: "I'll pay you back tomorrow."
+  },
+  {
+    phrasal: "pay off",
+    spanish: "pagar por completo / valer la pena",
+    explanation: "To finish paying / be worthwhile.",
+    example: "The loan was paid off last year."
+  },
+  {
+    phrasal: "put on",
+    spanish: "ponerse",
+    explanation: "To dress or wear.",
+    example: "She put on a jacket."
+  },
+  {
+    phrasal: "put out",
+    spanish: "apagar / molestar",
+    explanation: "To extinguish / bother someone.",
+    example: "Please put out the fire."
+  },
+  {
+    phrasal: "run away",
+    spanish: "huir",
+    explanation: "To escape or flee.",
+    example: "The thief ran away."
+  },
+  {
+    phrasal: "run for",
+    spanish: "postularse",
+    explanation: "To campaign for a position.",
+    example: "He ran for president."
+  },
+  {
+    phrasal: "see off",
+    spanish: "despedir a alguien",
+    explanation: "To say goodbye at departure.",
+    example: "We went to see off our friends."
+  },
+  {
+    phrasal: "set out",
+    spanish: "empezar un viaje o plan",
+    explanation: "To start a journey or plan.",
+    example: "They set out early in the morning."
+  },
+  {
+    phrasal: "show around",
+    spanish: "mostrar un lugar",
+    explanation: "To give a tour.",
+    example: "She showed me around the city."
+  },
+  {
+    phrasal: "sort out",
+    spanish: "resolver / clasificar",
+    explanation: "To solve a problem or organize.",
+    example: "We need to sort out the issue."
+  },
+  {
+    phrasal: "stick to",
+    spanish: "mantenerse fiel a",
+    explanation: "To follow or adhere to.",
+    example: "Stick to the rules."
+  },
+  {
+    phrasal: "take over",
+    spanish: "tomar control",
+    explanation: "To assume control or responsibility.",
+    example: "She took over the project."
+  },
+  {
+    phrasal: "talk over",
+    spanish: "discutir / hablar de algo",
+    explanation: "To discuss.",
+    example: "Let's talk over the plan."
+  },
+  {
+    phrasal: "think up",
+    spanish: "idear / inventar",
+    explanation: "To invent or imagine.",
+    example: "He thought up a new idea."
+  },
+  {
+    phrasal: "throw up",
+    spanish: "vomitar",
+    explanation: "To vomit.",
+    example: "He threw up after the ride."
+  },
+  {
+    phrasal: "turn back",
+    spanish: "regresar / dar la vuelta",
+    explanation: "To return the way you came.",
+    example: "We had to turn back due to the storm."
+  },
+  {
+    phrasal: "use up",
+    spanish: "usar completamente",
+    explanation: "To consume entirely.",
+    example: "We've used up all the paper."
+  },
+  {
+    phrasal: "wake up",
+    spanish: "despertarse",
+    explanation: "To stop sleeping.",
+    example: "I wake up at 6 am."
+  },
+  {
+    phrasal: "watch out for",
+    spanish: "tener cuidado con",
+    explanation: "To be cautious about.",
+    example: "Watch out for the dogs."
+  },
+  {
+    phrasal: "work out",
+    spanish: "hacer ejercicio / resolver",
+    explanation: " To exercise physically or find a solution to a problem.",
+    example: "I work out at the gym every morning."
+  }
+  {
+    phrasal: "back out",
+    spanish: "retirarse / echarse atrás",
+    explanation: "To withdraw from a promise or agreement.",
+    example: "He backed out of the deal at the last minute."
+  },
+  {
+    phrasal: "blow out",
+    spanish: "soplar apagando / destripar",
+    explanation: "To extinguish (a candle) / severely defeat.",
+    example: "She blew out the candles on her birthday cake."
+  },
+  {
+    phrasal: "break out",
+    spanish: "estallar / huir",
+    explanation: "To begin suddenly / to escape from somewhere.",
+    example: "A fire broke out in the kitchen."
+  },
+  {
+    phrasal: "bring up to date",
+    spanish: "poner al día",
+    explanation: "To make something current or up to date.",
+    example: "Please bring me up to date on the project."
+  },
+  {
+    phrasal: "call for",
+    spanish: "exigir / pedir",
+    explanation: "To demand or require something.",
+    example: "The situation calls for immediate action."
+  },
+  {
+    phrasal: "check over",
+    spanish: "revisar cuidadosamente",
+    explanation: "To examine something carefully.",
+    example: "Check over the list before submitting."
+  },
+  {
+    phrasal: "come out",
+    spanish: "salir / publicarse",
+    explanation: "To appear or be published.",
+    example: "Her new book comes out next week."
+  },
+  {
+    phrasal: "draw up",
+    spanish: "redactar / elaborar",
+    explanation: "To prepare a plan or document.",
+    example: "He drew up a contract for the deal."
+  },
+  {
+    phrasal: "drop off",
+    spanish: "dejar / dormirse",
+    explanation: "To leave someone somewhere / to fall asleep.",
+    example: "She dropped off after the movie started."
+  },
+  {
+    phrasal: "end up with",
+    spanish: "acabar con / terminar con",
+    explanation: "To have something as a result.",
+    example: "I ended up with more work than expected."
+  },
+  {
+    phrasal: "fall apart",
+    spanish: "desmoronarse / romperse",
+    explanation: "To break into pieces or fail completely.",
+    example: "The old book is falling apart."
+  },
+  {
+    phrasal: "get through",
+    spanish: "llegar a través / superar",
+    explanation: "To complete or survive something difficult / to contact someone.",
+    example: "I finally got through the exam."
+  },
+  {
+    phrasal: "go through",
+    spanish: "pasar por / atravesar",
+    explanation: "To experience something difficult / review something.",
+    example: "She had to go through many challenges."
+  },
+  {
+    phrasal: "hand out",
+    spanish: "repartir",
+    explanation: "To distribute something to people.",
+    example: "They handed out flyers on the street."
+  },
+  {
+    phrasal: "hang on",
+    spanish: "espera / aguanta",
+    explanation: "To wait a moment / persist.",
+    example: "Hang on, I’ll get it."
+  },
+  {
+    phrasal: "keep on with",
+    spanish: "seguir con",
+    explanation: "To continue doing something.",
+    example: "She kept on with her studies despite difficulties."
+  },
+  {
+    phrasal: "lay off",
+    spanish: "despedir del trabajo",
+    explanation: "To stop employing someone, usually for economic reasons.",
+    example: "The company had to lay off several workers."
+  },
+  {
+    phrasal: "look into",
+    spanish: "investigar / averiguar",
+    explanation: "To investigate or try to find out about something.",
+    example: "The teacher will look into the issue."
+  },
+  {
+    phrasal: "make off with",
+    spanish: "huir con (algo robado)",
+    explanation: "To steal something and escape with it.",
+    example: "The thief made off with the money."
+  },
+  {
+    phrasal: "miss out on",
+    spanish: "perder la oportunidad",
+    explanation: "To lose the chance to do something.",
+    example: "She missed out on the job because she was late."
+  },
+  {
+    phrasal: "move on",
+    spanish: "seguir adelante",
+    explanation: "To continue after stopping / change to something new.",
+    example: "Time to move on to the next topic."
+  },
+  {
+    phrasal: "pay off",
+    spanish: "salir rentable / pagar todo",
+    explanation: "To yield good results / pay all the debt.",
+    example: "Her hard work paid off in the end."
+  },
+  {
+    phrasal: "pick up on",
+    spanish: "notar / percibir",
+    explanation: "To notice something that is not obvious.",
+    example: "He picked up on her hesitation."
+  },
+  {
+    phrasal: "pull over",
+    spanish: "parar al costado (vehículo)",
+    explanation: "To drive to the side of the road and stop.",
+    example: "The police officer asked him to pull over."
+  },
+  {
+    phrasal: "put up",
+    spanish: "proveer alojamiento / tolerar",
+    explanation: "To provide lodging or to tolerate something.",
+    example: "They put us up for the night."
+  },
+  {
+    phrasal: "run over",
+    spanish: "revisar rápido / atropellar",
+    explanation: "To go over quickly / hit with vehicle.",
+    example: "Let's run over the plan once more."
+  },
+  {
+    phrasal: "see to",
+    spanish: "encargarse de",
+    explanation: "To take responsibility for something.",
+    example: "I'll see to the arrangements."
+  },
+  {
+    phrasal: "set in",
+    spanish: "instalarse / comenzar",
+    explanation: "To begin or establish.",
+    example: "Winter set in early this year."
+  },
+  {
+    phrasal: "sort through",
+    spanish: "ordenar / revisar cuidadosamente",
+    explanation: "To examine carefully or organize.",
+    example: "She sorted through the documents."
+  },
+  {
+    phrasal: "stand up",
+    spanish: "ponerse de pie / hacer el oso",
+    explanation: "To rise to a standing position / fail someone by not coming.",
+    example: "He stood up when she entered the room."
+  },
+  {
+    phrasal: "step down",
+    spanish: "renunciar",
+    explanation: "To leave an important position.",
+    example: "The CEO stepped down last year."
+  },
+  {
+    phrasal: "take off",
+    spanish: "despegar / quitarse ropa",
+    explanation: "To leave the ground / remove clothing.",
+    example: "The plane took off at 8 AM."
+  },
+  {
+    phrasal: "take up",
+    spanish: "empezar un hobby / ocupar espacio",
+    explanation: "To begin a new hobby / occupy time or space.",
+    example: "He took up painting during lockdown."
+  },
+  {
+    phrasal: "tear down",
+    spanish: "derribar",
+    explanation: "To demolish.",
+    example: "They tore down the old building."
+  },
+  {
+    phrasal: "think through",
+    spanish: "pensar detenidamente",
+    explanation: "To consider all parts of something before deciding.",
+    example: "She thought through her options before choosing."
+  },
+  {
+    phrasal: "throw out",
+    spanish: "tirar / rechazar",
+    explanation: "To discard / reject someone.",
+    example: "He threw out all the old papers."
+  },
+  {
+    phrasal: "turn up",
+    spanish: "aparecer / subir volúmen",
+    explanation: "To appear unexpectedly / increase volume.",
+    example: "He turned up to the event uninvited."
+  },
+  {
+    phrasal: "wake up to",
+    spanish: "darse cuenta",
+    explanation: "To realize something often unpleasant.",
+    example: "He woke up to the reality that she had left."
+  },
+  {
+    phrasal: "wrap up",
+    spanish: "finalizar / envolver",
+    explanation: "To finish or complete something / wrap a gift.",
+    example: "Let's wrap up this meeting."
+  },
+  {
+    phrasal: "zero in on",
+    spanish: "enfocarse en",
+    explanation: "To focus attention on something.",
+    example: "She zeroed in on the most important issue."
+  }
+
       // Puedes añadir más phrasal verbs aquí
     ];
 
