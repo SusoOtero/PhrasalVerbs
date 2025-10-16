@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phrasal Verb Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #2c3e50;
+    }
+
+    .card {
+      background: white;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    button.option {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button.option:hover {
+      background-color: #2980b9;
+    }
+
+    .feedback {
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+
+    .next-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .next-btn:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Phrasal Verb Challenge</h1>
+
+  <div class="card">
+    <p><strong>📘 Spanish:</strong></p>
+    <p id="spanish" style="font-size: 1.3em;"></p>
+
+    <div id="options"></div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <button class="next-btn" onclick="nextQuestion()">🔁 Next Question</button>
+  </div>
+
+  <script>
+    const phrasalVerbs = [
+      {
+        phrasal: "cut off",
+        spanish: "cortar / interrumpir",
+        explanation: "To stop the supply or interrupt.",
+        example: "The phone call was cut off."
+      },
+      {
+        phrasal: "hold back",
+        spanish: "contener, reprimir",
+        explanation: "To stop yourself from showing emotion.",
+        example: "She couldn't hold back her tears."
+      },
+      {
+        phrasal: "bring up",
+        spanish: "mencionar, criar",
+        explanation: "To mention a topic or raise a child.",
+        example: "He brought up the topic during the meeting."
+      },
+      {
+        phrasal: "carry on",
+        spanish: "continuar",
+        explanation: "To continue doing something.",
+        example: "They decided to carry on with the plan."
+      },
+      {
+        phrasal: "give up",
+        spanish: "rendirse",
+        explanation: "To stop trying to do something.",
+        example: "Don’t give up – you can do it!"
+      },
+      // Puedes añadir más phrasal verbs aquí
+    ];
+
+    let current = null;
+
+    function nextQuestion() {
+      document.getElementById("feedback").innerHTML = "";
+
+      // Elegir una pregunta correcta y 2 incorrectas
+      current = phrasalVerbs[Math.floor(Math.random() * phrasalVerbs.length)];
+      const incorrect = phrasalVerbs.filter(pv => pv !== current);
+      const randomIncorrect = incorrect.sort(() => 0.5 - Math.random()).slice(0, 2);
+
+      const options = [current, ...randomIncorrect].sort(() => 0.5 - Math.random());
+
+      // Mostrar la pregunta
+      document.getElementById("spanish").textContent = current.spanish;
+
+      // Mostrar las opciones
+      const optionsDiv = document.getElementById("options");
+      optionsDiv.innerHTML = "";
+
+      options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "option";
+        btn.textContent = opt.phrasal;
+        btn.onclick = () => checkAnswer(opt);
+        optionsDiv.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(selected) {
+      const feedback = document.getElementById("feedback");
+      if (selected.phrasal === current.phrasal) {
+        feedback.innerHTML = `
+          <p class="correct">✅ Correct!</p>
+          <p><strong>💡 Explanation:</strong> ${current.explanation}</p>
+          <p><strong>💬 Example:</strong> ${current.example}</p>
+        `;
+      } else {
+        feedback.innerHTML = `<p class="incorrect">❌ Incorrect. Try again!</p>`;
+      }
+    }
+
+    // Iniciar el juego
+    nextQuestion();
+  </script>
+
+</body>
+</html>
